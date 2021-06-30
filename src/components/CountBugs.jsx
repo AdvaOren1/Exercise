@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 
 function CountBugs() {
@@ -22,12 +22,18 @@ function CountBugs() {
     
     const handleChange = (event) => {
         stamFunction()
-        setNewValue(event.target.value);
+        setNewValue(event.target.val);
     }
 
     const stamFunction =()=>{
         console.log("en al tap2tel");
     }
+
+    useEffect(()=>{
+        if(Math.random() < 0.5){
+            alert("Bug added successfully")
+        }
+    },[textArr])
 
     return (
         <div className="App">
