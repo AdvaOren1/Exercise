@@ -31,6 +31,7 @@ function CountBugs() {
 
     return (
         <div className="App">
+
             <h1>Count Your Bugs!</h1>
             <button onClick={addBug}>Add Bugs!</button>
             <button>Remove Bugs!</button>
@@ -43,6 +44,7 @@ function CountBugs() {
             {textArr.map((text) => {
                 return <li>{text}</li>
             })}
+            <img style={{ position: 'absolute', width:'100vw', height: '100%', top: '0', left: '0', zIndex: -5 }} src='/background.jpg'></img>
         </div>
     );
 }
