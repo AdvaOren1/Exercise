@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import CountBags from './components/CountBags';
+import CountBugs from './components/CountBugs';
 
 function App() {
   return (
     <div className="App">
-      <CountBags />
+      <CountBugs />
     </div>
   );
 }

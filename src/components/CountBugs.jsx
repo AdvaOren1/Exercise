@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react'
 
 
-function CountBags() {
+function CountBugs() {
     const [counter, setCounter] = useState(0);
     const [newValue, setNewValue] = useState('');
     const [textArr, setTextArr] = useState([])
     const inputElement = useRef(null);
 
-    const addBag = () => {
+    const addBug = () => {
         console.log("be-tap2tel yesh harbe caele")
         setCounter(1);
     };
@@ -31,10 +31,10 @@ function CountBags() {
 
     return (
         <div className="App">
-            <h1>Count Your Bags!</h1>
-            <button onClick={addBag}>Add Bags!</button>
-            <button>Remove Bags!</button>
-            <h4>bags counter: {counter}</h4>
+            <h1>Count Your Bugs!</h1>
+            <button onClick={addBug}>Add Bugs!</button>
+            <button>Remove Bugs!</button>
+            <h4>bugs counter: {counter}</h4>
             <h1>Not talking about the bugs:</h1>
             <input ref={inputElement}
                 id='name' type="text" name="name" placeholder="שם" autoComplete='off' value={newValue} onChange={(e) => handleChange(e)}></input>
@@ -47,4 +47,4 @@ function CountBags() {
     );
 }
 
-export default CountBags;
+export default CountBugs;
